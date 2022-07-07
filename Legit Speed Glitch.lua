@@ -1,6 +1,6 @@
 if game.PlaceId == 2788229376 then
     setfpscap(360)
-    Key = Enum.KeyCode.L
+    Key = Enum.KeyCode.Z
     game:GetService("UserInputService").InputBegan:Connect(function(input,chatting)
         if input.UserInputType == Enum.UserInputType.Keyboard then
             if chatting then IsChatting = true else IsChatting = false end
@@ -23,13 +23,13 @@ if game.PlaceId == 2788229376 then
                     wait()
                     game:GetService("VirtualInputManager"):SendKeyEvent(true, "S", false, game)
                     spawn(function()
-                        while toggle == true do wait()
-                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait()
-                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait()
-                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait()
-                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait()
-                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait()
-                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait()
+                        while toggle == true do wait(0)
+                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait(0)
+                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait(0)
+                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait(0)
+                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait(0)
+                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait(0)
+                            game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait(0)
                         end
                     end)
                     Animation:Stop()
