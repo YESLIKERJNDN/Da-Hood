@@ -262,7 +262,9 @@ if game.PlaceId == 2788229376 then
             Stop()
         end)
         game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()
-            game.CoreGui.Animation:Destroy()
+            if game.CoreGui:FindFirstChild("Animation") then
+                game.CoreGui.Animation:Destroy()
+            end
         end)
     end
     AnimationPack(game.Players.LocalPlayer.Character)
